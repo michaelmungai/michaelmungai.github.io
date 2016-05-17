@@ -5,6 +5,9 @@ html, body {
     padding: 0;
     border: none;
     background-color: #e5e5e5;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.2px;
 }
 
 .cont {
@@ -88,7 +91,7 @@ li:hover {
     background: linear-gradient(#396f83, #039768);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 1;
+    opacity: 0.9;
     text-shadow: none;
     font-family: inherit;
     font-weight: 300;
@@ -98,24 +101,74 @@ li:hover {
 background-color:#4CAF50;
 }
 
-div.img {
-    position: absolute;
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+/* image gallery */
+
+.wrap {
+   overflow: hidden;
+   margin: 10px;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 20%;
+   padding-bottom: 20%;
+}
+.boxInner {
+   position: absolute;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
+   overflow: hidden;
+}
+.boxInner img {
+   width: 100%;
 }
 
-div.img:hover {
-    border: 1px solid #777;
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: 0;
+   background: #e5e5e5;
+    color: #396f83;
+   padding: 10px;
+   text-align: center;
+   font-weight: 200;
 }
 
-div.img img {
-    width: 100%;
-    height: auto;
+.titleBox:not(:hover) {
+    color: transparent;
+    text-shadow: none;
+    background: transparent;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
 }
