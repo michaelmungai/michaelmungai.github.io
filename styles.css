@@ -1,0 +1,108 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #fff;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.coverpage {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.coverpage-body p {
+    position: absolute;
+    top: 83%;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 1px 1px 7px #5f5f5f;
+    opacity: 0.6;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+}
+
+.artdes {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+    background: linear-gradient(#396f83, #039768);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.coverpage .coverpage-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.coverpage .coverpage-body .name {
+    color: #fff;
+    font-size: 40px;
+    font-family: "Big John", "Questa Grande", "Futura", "Helvetica Neue";
+    text-shadow: 5px 3px 20px #000000;
+    opacity: 0.13;
+}
+.coverpage .name:hover {
+    font-size: 40px;
+    font-family: "Big John", "Questa Grande", "Futura", "Helvetica Neue";
+    opacity: 1;
+    text-shadow: none;
+    background: linear-gradient(#396f83, #039768);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.coverpage a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.coverpage a:link {
+    text-decoration: none;
+    color: #fff;
+}
+.coverpage a:hover {
+    background: linear-gradient(#396f83, #039768);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    font-weight: 200;
+}
+
+@media(min-width:350px) {
+    .coverpage {
+        height: 100%;
+        padding: 0;
+    }
+
+    .coverpage .coverpage-body .name {
+        font-size: 100px;
+    }
+}
