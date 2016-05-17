@@ -22,6 +22,7 @@ ul {
     text-align: justify;
     width: 33.33%;
     padding: 0;
+    padding-top: 1px;
     margin: 0;
     overflow: hidden;
     background-color: none;
@@ -33,7 +34,6 @@ ul {
 li {
     float: left;
     text-shadow: 2px 2px 7px #000000;
-    margin-top: 1px;
 }
 
 .cont-right {
@@ -79,7 +79,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 4px 16px;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
