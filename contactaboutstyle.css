@@ -91,20 +91,30 @@ background-color:#4CAF50;
     overflow: hidden;
 }
 
-.background-img {
+.background-color {
+    background: linear-gradient(#396f83, #039768);
     position: absolute;
     height: inherit;
     width: 50%;
     overflow: hidden;
-    background-color: #000;
-    }
+}
 
 img {
-    position: relative;
-    width: auto;
-    height: inherit;
-    overflow: hidden;
+    position: absolute;
+    height: auto;
+    width: 100%;
 }
+
+@media only screen and (max-width : 1500px) and (min-width : 400px) {
+   /* Medium desktop: 4 tiles */
+   img {
+     min-height: 100%;
+     width: auto;
+   }
+}
+.background-image {
+    width: auto;
+} 
 
 /* // Content // */
 
