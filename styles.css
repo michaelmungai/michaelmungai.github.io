@@ -42,20 +42,6 @@ html {
     font-weight: 100;
 }
 
-.artdes {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    font-weight: 100;
-    font-family: "Helvetica Neue";
-    background: linear-gradient(#396f83, #039768);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 30px;
-    opacity: 1;
-}
-
 .coverpage .coverpage-body {
     display: table-cell;
     vertical-align: middle;
@@ -87,13 +73,6 @@ html {
 .coverpage a:link {
     text-decoration: none;
     color: #fff;
-}
-.coverpage a:hover {
-    background: linear-gradient(#396f83, #039768);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-    font-weight: 200;
 }
 
 @media(min-width:350px) {
