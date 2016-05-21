@@ -41,7 +41,7 @@ td {
 
 #michael {
     font-family: "Big John", "Questa Grande", "Baskerville", Garamond, "Helvetica", serif;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     font-weight: 100;
     font-size: 70px;
     background: linear-gradient(#039768, #396f83) ;
