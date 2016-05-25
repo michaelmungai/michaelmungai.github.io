@@ -229,3 +229,12 @@ img {
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+
+ /* SOCIAL MEDIA LINKS */
+ 
+ .contactmetext li:hover{ 
+    background: linear-gradient(#396f83, #039768);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
